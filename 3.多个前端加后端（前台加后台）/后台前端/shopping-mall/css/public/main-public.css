@@ -1,0 +1,284 @@
+/* 此文件样式控制主页的公共部分样式，主页内容要都引用此，但是无需自己引入 */
+.main-public-main {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #d4d4d4;
+    position: relative;
+}
+
+.main-public-main .main-public-header {
+    padding: 1.5em 2em;
+    color: #ebebeb;
+    background-color: #1a1b1d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.main-public-main .main-public-header .main-public-header-left {
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.main-public-main .main-public-header .main-public-header-right {
+    display: flex;
+    width: 20em;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-public-main .main-public-header .main-public-header-right .main-public-header-right-info {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.main-public-main .main-public-header .main-public-header-right .main-public-header-right-info:hover span {
+    color: #fff;
+    font-weight: bolder;
+}
+
+.main-public-main .main-public-header .main-public-header-right .main-public-header-right-info:hover .main-public-header-right-info-icon .main-public-header-right-info-icon-head {
+    background-color: #fff;
+    transform: scale(1.1);
+}
+
+.main-public-main .main-public-header .main-public-header-right .main-public-header-right-info:hover .main-public-header-right-info-icon .main-public-header-right-info-icon-body {
+    background-color: #fff;
+    transform: scale(1.1);
+}
+
+.main-public-main .main-public-header .main-public-header-right .main-public-header-right-info .main-public-header-right-info-icon {
+    width: 1.1em;
+    height: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: .3em;
+}
+
+.main-public-main .main-public-header .main-public-header-right .main-public-header-right-info .main-public-header-right-info-icon .main-public-header-right-info-icon-head {
+    width: .6em;
+    height: .6em;
+    background-color: #ebebeb;
+    border-radius: .8em;
+}
+
+.main-public-main .main-public-header .main-public-header-right .main-public-header-right-info .main-public-header-right-info-icon .main-public-header-right-info-icon-body {
+    width: 1.1em;
+    height: .6em;
+    background-color: #ebebeb;
+    border-radius: .3em .3em 0 0;
+}
+
+.main-public-main .main-public-header .main-public-header-right .main-public-header-right-exit {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.main-public-main .main-public-header .main-public-header-right .main-public-header-right-exit:hover span {
+    color: #fff;
+    font-weight: bolder;
+}
+
+.main-public-main .main-public-header .main-public-header-right .main-public-header-right-exit:hover .main-public-header-right-exit-icon {
+    transform: scale(1.1);
+}
+
+.main-public-main .main-public-header .main-public-header-right .main-public-header-right-exit:hover .main-public-header-right-exit-icon .main-public-header-right-exit-icon-outside .main-public-header-right-exit-icon-inner {
+    background-color: #fff;
+}
+
+.main-public-main .main-public-header .main-public-header-right .main-public-header-right-exit .main-public-header-right-exit-icon {
+    width: 1.1em;
+    height: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: .3em;
+}
+
+.main-public-main .main-public-header .main-public-header-right .main-public-header-right-exit .main-public-header-right-exit-icon .main-public-header-right-exit-icon-outside {
+    width: 1.1em;
+    height: 1.1em;
+    border-radius: 100%;
+    background-color: #ebebeb;
+    position: relative;
+}
+
+.main-public-main .main-public-header .main-public-header-right .main-public-header-right-exit .main-public-header-right-exit-icon .main-public-header-right-exit-icon-outside::after {
+    content: '';
+    width: .7em;
+    height: .7em;
+    border-radius: 100%;
+    background-color: #1a1b1d;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.main-public-main .main-public-header .main-public-header-right .main-public-header-right-exit .main-public-header-right-exit-icon .main-public-header-right-exit-icon-outside .main-public-header-right-exit-icon-inner {
+    position: absolute;
+    width: .2em;
+    height: .7em;
+    background-color: #ebebeb;
+    top: -20%;
+    border-radius: .3em;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main-public-main .main-public-body {
+    height: 100%;
+    flex: 1;
+    display: flex;
+}
+
+.main-public-main .main-public-body .main-public-left-body {
+    width: 10vw;
+    background-color: #2c2d2e;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    position: relative;
+}
+
+.main-public-main .main-public-body .main-public-right-body {
+    padding: .8em;
+    box-sizing: border-box;
+    width: 90vw;
+}
+
+.main-public-main .main-public-body .main-public-right-body .main-public-right-body-box {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.main-public-main .main-public-body .main-public-right-body .main-public-right-body-box .main-public-right-body-box-title {
+    padding: 1em;
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.5em;
+    border-bottom: 2px solid #ebebeb;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.main-public-main .main-public-body .main-public-right-body .main-public-right-body-box .main-public-right-body-box-body {
+    padding: .3em;
+    box-sizing: border-box;
+}
+
+.main-public-main .main-public-body .main-public-right-body .main-public-right-body-box .main-public-right-body-box-title .main-public-right-body-box-title-mark {
+    width: .5em;
+    height: 2em;
+    background-color: rgb(232, 88, 10);
+    margin-right: 1em;
+    border-radius: 1em;
+}
+
+.main-public-main .main-public-body .main-public-left-body .main-public-left-body-title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(226, 226, 226);
+}
+
+.main-public-main .main-public-body .main-public-left-body .main-public-left-body-title .main-public-left-body-title-span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1em;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 1.1em;
+    border-bottom: 1px #303133 solid;
+    transition: .5s;
+}
+
+.main-public-main .main-public-body .main-public-left-body .main-public-left-body-title .main-public-left-body-title-span.check {
+    color: rgb(232, 88, 10);
+    background-color: #262626;
+    font-weight: bolder;
+}
+
+.main-public-main .main-public-body .main-public-left-body .main-public-left-body-title .main-public-left-body-title-span:hover {
+    color: rgb(232, 88, 10);
+    background-color: #262626;
+    font-weight: bolder;
+}
+
+/* 自定义修改密码组件样式 */
+.modify-password-custom-component {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.modify-password-custom-component .modify-password-custom-component-title{
+    font-size: 1.5em;
+    font-weight: bolder;
+    margin: .1em;
+}
+.modify-password-custom-component .input-text-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1em;
+}
+
+.modify-password-custom-component .input-text-box .text {
+    width: 65%;
+    font-size: 1.1em;
+    margin: .4em;
+}
+
+.input-box input {
+    color: rgb(173, 173, 173) !important;
+}
+
+.input-box .password .header .header-before {
+    background-color: rgb(41, 41, 41) !important;
+}
+
+.input-box .password .header .header-after{
+    background-color: rgb(112, 112, 112) !important;
+}
+.input-box .password .body{
+    background-color: rgb(112, 112, 112) !important;
+}
+.input-box{
+    border: 2px rgb(112, 112, 112) solid !important;
+}
+
+button {
+    font-size: 1.3em !important;
+    margin: 1em !important;
+    color: rgb(112, 112, 112) !important;
+    border-color: rgb(112, 112, 112) !important;
+}
+
+button:hover {
+    color: rgb(173, 173, 173) !important;
+    border-color: rgba(255, 255, 255, 0.2) !important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}

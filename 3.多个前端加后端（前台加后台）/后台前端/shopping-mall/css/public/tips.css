@@ -1,0 +1,7 @@
+.tips-message{
+    color: red;
+    font-size: 1em;
+    font-weight: bolder;
+    opacity: 0;
+    transition: .5s;
+}

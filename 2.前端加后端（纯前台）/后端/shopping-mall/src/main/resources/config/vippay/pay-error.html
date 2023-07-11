@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>支付错误界面</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: #ccc;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        main{
+            width: 70%;
+            height: 80%;
+            background-color: rgb(247, 82, 27);
+            box-shadow: 2px 2px 10px 10px rgba(0, 0, 0, .6);
+            border-radius: 10px;
+            display: flex;
+            box-sizing: border-box;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        h1{
+            color: #fff;
+            font-weight: bolder;
+            font-size: 3em;
+            padding: 1em;
+            margin-bottom: 1em;
+        }
+        p{
+            margin-top: 1.5em;
+            color: #fff;
+            font-size: 1.5em;
+        }
+        a{
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <h1>#{errorMessage}</h1>
+    <p class="tips"><span>5</span>s后将自动跳转到主页面</p>
+    <p><a href="#{requestFromUrl}">立刻跳转</a></p>
+</main>
+<script>
+    let span=document.querySelector('span');
+    let endTime=5;
+    const taskId=setInterval(() => {
+        if(endTime>0){
+            endTime--;
+            span.innerText=endTime;
+        }else{
+            clearInterval(taskId);
+        }
+    }, 1000);
+    setTimeout(() => {
+        window.location.href="#{requestFromUrl}";
+    }, 5000);
+</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+/*自定义组件，是不能显示的，所以需要加上这个类*/
+.img-component-box{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .6s;
+    display: none;
+}
+
+.img-component-box .img-component-box-main{
+    min-width: 30%;
+    font-size: 1.2em;
+    color: rgb(221, 221, 221);
+    background-color: rgb(41, 41, 41);
+    padding: 1em;
+    box-shadow: 0 0px 20px black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.img-component-box .img-component-box-main .img-component-box-main-head{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.img-component-box .img-component-box-main .img-component-box-main-head .img-component-box-main-head-close{
+    width: 2em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+.img-component-box .img-component-box-main .img-component-box-main-head .img-component-box-main-head-close:hover > div{
+    background-color: rgb(187, 16, 16);
+}
+
+.img-component-box .img-component-box-main .img-component-box-main-head .img-component-box-main-head-close > div{
+    width: 1.5em;
+    height: .23em;
+    border-radius: .23em;
+    background-color: rgb(221, 221, 221);
+    transition: all .3s;
+}
+.img-component-box .img-component-box-main .img-component-box-main-head .img-component-box-main-head-close .img-component-box-main-head-close-left{
+    transform: rotateZ(45deg);
+    position: absolute;
+}
+.img-component-box .img-component-box-main .img-component-box-main-head .img-component-box-main-head-close .img-component-box-main-head-close-right{
+    transform: rotateZ(-45deg);
+}
+.img-component-box .img-component-box-main .img-component-box-main-body{
+    min-height: 5em;
+}

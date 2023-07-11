@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <title>登陆失败</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+        aside{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        h1{
+            font-size: 2.5em;
+            color: rgb(200, 0, 0);
+            margin-top: 50px;
+        }
+        article{
+            width: 80px;
+            height: 80px;
+            background-color: rgb(200, 0, 0);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        div{
+            border-radius: 5px;
+            position: absolute;
+            width: 60px;
+            height: 8px;
+            background-color: #fff;
+            transform: rotateZ(45deg);
+        }
+        div:last-of-type{
+            transform: rotate(-45deg);
+        }
+        
+    </style>
+</head>
+<body>
+    <aside>
+        <article>
+            <div></div>
+            <div></div>
+        </article>
+        <h1>登录失败</h1>
+    </aside>
+</body>
+</html>

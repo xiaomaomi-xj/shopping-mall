@@ -1,0 +1,24 @@
+/*公共的css*/
+@import url("public.css");
+/*公共主页样式*/
+@import url("main-public.css");
+/*提示组件样式*/
+@import url("message.css");
+/*信息弹窗浮层样式*/
+@import url("message-box.css");
+/*删除信息弹窗浮层样式*/
+@import url("del-tips-box.css");
+/*加载浮层样式*/
+@import url("loading.css");
+/*输入框样式*/
+@import url("input.css");
+/*文字消息组件样式*/
+@import url("tips.css");
+/*自定义表格样式*/
+@import url("custom-table.css");
+/*自定义组件样式*/
+@import url("custom-component-box.css");
+/*上传按钮的样式*/
+@import url("file-update.css");
+/*图片组件样式*/
+@import url("img-component-box.css");

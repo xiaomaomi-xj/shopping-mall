@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/public/index.css">
+    <link rel="stylesheet" href="../css/main/manage/product-manage.css">
+    <title>商品管理</title>
+</head>
+
+<body>
+    <main>
+        <div>
+            <div class="custom-component product-manage-add-component-box">
+                <div class="product-manage-add-box">
+                    <div class="product-manage-title">新增商品</div>
+                    <div class="product-manage-bg-box">
+                        <div class="product-manage-text-title">商品封面:</div>
+                        <div class="product-manage-bg-box-bg">
+                            <div class="product-manage-bg">
+                                <div class="file-update-box">
+                                    <input type="file" class="file-update-box-file">
+                                    <img class="file-update-box-img" src="../src/bak-img.jpg" alt="图片资源丢失...">
+                                    <div class="file-update-box-extend">
+                                        <div class="file-update-box-extend-left"></div>
+                                        <div class="file-update-box-extend-right"></div>
+                                    </div>
+                                    <div class="file-update-box-select">
+                                        <div class="file-update-box-select-left"></div>
+                                        <div class="file-update-box-select-right"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-manage-input-box">
+                        <div class="product-manage-text-title">商品名字:</div>
+                        <div class="product-manage-input">
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="product-manage-text-area-box">
+                        <div class="product-manage-text-title">商品描述：</div>
+                        <div class="product-manage-text-area">
+                            <textarea cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="product-manage-input-box">
+                        <div class="product-manage-text-title">商品价格:</div>
+                        <div class="product-manage-input">
+                            <input type="number">
+                        </div>
+                    </div>
+                    <div class="product-manage-input-box">
+                        <div class="product-manage-text-title">库存:</div>
+                        <div class="product-manage-input">
+                            <input type="number">
+                        </div>
+                    </div>
+                    <div class="product-manage-upload-box">
+                        <div class="product-manage-text-title">商品详情图片(最多四个):</div>
+                        <div class="product-manage-upload-box-upload">
+                            <div class="product-manage-bg">
+                                <div class="file-update-box">
+                                    <input type="file" class="file-update-box-file">
+                                    <img class="file-update-box-img" src="../src/bak-img.jpg" alt="图片资源丢失...">
+                                    <div class="file-update-box-extend">
+                                        <div class="file-update-box-extend-left"></div>
+                                        <div class="file-update-box-extend-right"></div>
+                                    </div>
+                                    <div class="file-update-box-select">
+                                        <div class="file-update-box-select-left"></div>
+                                        <div class="file-update-box-select-right"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-manage-bg">
+                                <div class="file-update-box">
+                                    <input type="file" class="file-update-box-file">
+                                    <img class="file-update-box-img" src="../src/bak-img.jpg" alt="图片资源丢失...">
+                                    <div class="file-update-box-extend">
+                                        <div class="file-update-box-extend-left"></div>
+                                        <div class="file-update-box-extend-right"></div>
+                                    </div>
+                                    <div class="file-update-box-select">
+                                        <div class="file-update-box-select-left"></div>
+                                        <div class="file-update-box-select-right"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-manage-bg">
+                                <div class="file-update-box">
+                                    <input type="file" class="file-update-box-file">
+                                    <img class="file-update-box-img" src="../src/bak-img.jpg" alt="图片资源丢失...">
+                                    <div class="file-update-box-extend">
+                                        <div class="file-update-box-extend-left"></div>
+                                        <div class="file-update-box-extend-right"></div>
+                                    </div>
+                                    <div class="file-update-box-select">
+                                        <div class="file-update-box-select-left"></div>
+                                        <div class="file-update-box-select-right"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-manage-bg">
+                                <div class="file-update-box">
+                                    <input type="file" class="file-update-box-file">
+                                    <img class="file-update-box-img" src="../src/bak-img.jpg" alt="图片资源丢失...">
+                                    <div class="file-update-box-extend">
+                                        <div class="file-update-box-extend-left"></div>
+                                        <div class="file-update-box-extend-right"></div>
+                                    </div>
+                                    <div class="file-update-box-select">
+                                        <div class="file-update-box-select-left"></div>
+                                        <div class="file-update-box-select-right"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="product-manage-add-button">新增</button>
+                </div>
+            </div>
+            <div class="custom-component product-manage-modify-component-box">
+                <div class="product-manage-modify-box">
+                    <div class="product-manage-title">修改商品</div>
+                    <div class="product-manage-text-box">
+                        <div class="product-manage-text-title">商品id：</div>
+                        <div class="product-manage-text-value"></div>
+                    </div>
+                    <div class="product-manage-bg-box">
+                        <div class="product-manage-text-title">商品封面:</div>
+                        <div class="product-manage-bg-box-bg">
+                            <div class="product-manage-bg">
+                                <div class="file-update-box">
+                                    <input type="file" class="file-update-box-file">
+                                    <img class="file-update-box-img" src="../src/bak-img.jpg" alt="图片资源丢失...">
+                                    <div class="file-update-box-extend">
+                                        <div class="file-update-box-extend-left"></div>
+                                        <div class="file-update-box-extend-right"></div>
+                                    </div>
+                                    <div class="file-update-box-select">
+                                        <div class="file-update-box-select-left"></div>
+                                        <div class="file-update-box-select-right"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-manage-input-box">
+                        <div class="product-manage-text-title">商品名字:</div>
+                        <div class="product-manage-input">
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="product-manage-text-area-box">
+                        <div class="product-manage-text-title">商品描述：</div>
+                        <div class="product-manage-text-area">
+                            <textarea cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="product-manage-input-box">
+                        <div class="product-manage-text-title">商品价格:</div>
+                        <div class="product-manage-input">
+                            <input type="number">
+                        </div>
+                    </div>
+                    <div class="product-manage-input-box">
+                        <div class="product-manage-text-title">库存:</div>
+                        <div class="product-manage-input">
+                            <input type="number">
+                        </div>
+                    </div>
+                    <div class="product-manage-upload-box">
+                        <div class="product-manage-text-title">商品详情图片(最多四个):</div>
+                        <div class="product-manage-upload-box-upload">
+                            <div class="product-manage-bg">
+                                <div class="file-update-box">
+                                    <input type="file" class="file-update-box-file">
+                                    <img class="file-update-box-img" src="../src/bak-img.jpg" alt="图片资源丢失...">
+                                    <div class="file-update-box-extend">
+                                        <div class="file-update-box-extend-left"></div>
+                                        <div class="file-update-box-extend-right"></div>
+                                    </div>
+                                    <div class="file-update-box-select">
+                                        <div class="file-update-box-select-left"></div>
+                                        <div class="file-update-box-select-right"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-manage-bg">
+                                <div class="file-update-box">
+                                    <input type="file" class="file-update-box-file">
+                                    <img class="file-update-box-img" src="../src/bak-img.jpg" alt="图片资源丢失...">
+                                    <div class="file-update-box-extend">
+                                        <div class="file-update-box-extend-left"></div>
+                                        <div class="file-update-box-extend-right"></div>
+                                    </div>
+                                    <div class="file-update-box-select">
+                                        <div class="file-update-box-select-left"></div>
+                                        <div class="file-update-box-select-right"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-manage-bg">
+                                <div class="file-update-box">
+                                    <input type="file" class="file-update-box-file">
+                                    <img class="file-update-box-img" src="../src/bak-img.jpg" alt="图片资源丢失...">
+                                    <div class="file-update-box-extend">
+                                        <div class="file-update-box-extend-left"></div>
+                                        <div class="file-update-box-extend-right"></div>
+                                    </div>
+                                    <div class="file-update-box-select">
+                                        <div class="file-update-box-select-left"></div>
+                                        <div class="file-update-box-select-right"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-manage-bg">
+                                <div class="file-update-box">
+                                    <input type="file" class="file-update-box-file">
+                                    <img class="file-update-box-img" src="../src/bak-img.jpg" alt="图片资源丢失...">
+                                    <div class="file-update-box-extend">
+                                        <div class="file-update-box-extend-left"></div>
+                                        <div class="file-update-box-extend-right"></div>
+                                    </div>
+                                    <div class="file-update-box-select">
+                                        <div class="file-update-box-select-left"></div>
+                                        <div class="file-update-box-select-right"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="product-manage-modify-button">修改</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="../js/main/manage/ProductManage.js"></script>
+</body>
+
+</html>

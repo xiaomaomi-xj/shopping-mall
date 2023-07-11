@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>支付失败</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        aside {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 4em;
+            color: rgb(200, 0, 0);
+            margin-top: 50px;
+        }
+
+        article {
+            width: 150px;
+            height: 150px;
+            background-color: rgb(200, 0, 0);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        div {
+            border-radius: 5px;
+            position: absolute;
+            width: 130px;
+            height: 12px;
+            background-color: #fff;
+            transform: rotateZ(45deg);
+            top: 67px;
+            left: 11px;
+        }
+
+        div:last-of-type {
+            top: 70px;
+            left: 12px;
+            transform: rotate(-45deg);
+        }
+
+        .span {
+            margin-top: 2em;
+            color: rgb(200, 0, 0);
+            font-size: 1.4em;
+            font-weight: bolder;
+        }
+
+        a {
+            text-decoration: none;
+            margin-top: 3em;
+            font-size: 1.5em;
+            font-weight: bolder;
+            color: rgb(200, 0, 0);
+        }
+
+        .tips {
+            margin-top: 2em;
+            font-weight: bolder;
+            font-size: 1.3em;
+        }
+    </style>
+</head>
+
+<body>
+<aside>
+    <article>
+        <div></div>
+        <div></div>
+    </article>
+    <h1>支付失败</h1>
+    <span class="tips">失败原因：【#{message}】</span>
+    <span class="span"><span class="time">5</span>s后跳转到主页</span>
+    <a href="#{requestFromUrl}">立即跳转</a>
+</aside>
+<script>
+    const timeEl = document.querySelector('.time');
+    let time = 5;
+    const taskId = setInterval(() => {
+        time--;
+        if (time <= 0) {
+            clearInterval(taskId);
+        }
+        timeEl.innerHTML = time;
+    }, 1000);
+    setTimeout(() => {
+        window.location.href = "#{requestFromUrl}";
+    }, 5000);
+</script>
+</body>
+
+</html>

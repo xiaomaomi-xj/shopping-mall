@@ -1,0 +1,120 @@
+//mainPage页面的所有颜色控制
+$special-color: rgb(247, 82, 27);
+$title-fgcolor: #f9fafcc7;
+$title-hover-fgcolor:white;
+$title-bgcolor:#303133;
+$title-hover-bgcolor: #fbfdff3d;
+$title-active-bgcolor: #0000006b;
+$main-bgcolor:#E9EEF3;
+$icon-text-color: $title-hover-fgcolor;
+$border-color: #ccc;
+$describe-color: #888;
+$transparent-bgcolor : rgb(255, 255, 255, .9);
+$shadow-color: rgba(0, 0, 0, 0.543);
+$shadow-white-color: rgba(255, 255, 255, 0.697);
+$button-a-fgcolor: rgba(0, 0, 0, 0.8);
+$button-a-bgcolor: rgba(227, 226, 226, 0.8);
+//messageBox
+$message-box-text-fgcolor: $title-fgcolor;
+$message-box-hr-bgcolor:#000;
+$message-box-view-heid-color: $title-bgcolor;
+$message-box-view-heid-hover-color: $special-color;
+$message-box-input-bgcolor: $main-bgcolor;
+$message-box-transparent-bgcolor:rgba(0, 0, 0, .4);
+$message-box-main-bgcolor:$title-bgcolor;
+$password-error-tops-color: $special-color;
+$password-input-bgcolor: $main-bgcolor;
+$loading-color: #eee;
+//message
+$message-text-fgcolor: $title-fgcolor;
+$message-main-bgcolor: $title-bgcolor;
+$message-close-color: $message-text-fgcolor;
+$message-close-hover-color: $special-color;
+//drawerbox
+$drawer-box-transparent-bgcolor: rgba(0,0,0,.4);
+$drawer-box-content-bgcolor: $title-bgcolor;
+$drawer-box-content-color: $title-fgcolor;
+$drawer-box-close-color:$title-fgcolor;
+$drawer-box-close-hover-color:$special-color;
+$drawer-box-disble-bgcolor:#999;
+$drawer-box-alway-disble-bgcolor:#5f4646;
+
+//register页面
+$register-bgcolor:rgba(0, 0, 0, .9);
+$register-right-bgcolor:rgba(255, 255, 255, .3);
+$register-shadow-color:rgba(0, 0, 0, .3);
+$register-transparent-input-bgcolor:rgba(0, 0, 0, .1);
+$register-transparent-button-bgcolor:$register-transparent-input-bgcolor;
+$register-transparent-button-hover-bgcolor:rgba(0, 0, 0, .2);
+
+//登录页面
+$login-bgcolor:rgba(0, 0, 0, .9);
+$login-right-bgcolor:rgba(255, 255, 255, .3);
+$login-shadow-color:rgba(0, 0, 0, .3);
+$login-transparent-input-bgcolor:rgba(0, 0, 0, .1);
+$login-transparent-button-bgcolor:$register-transparent-input-bgcolor;
+$login-transparent-button-hover-bgcolor:rgba(0, 0, 0, .2);
+
+
+//公共的header和footer
+$public-title-bgcolor:$title-bgcolor;
+$public-title-fgcolor:$title-fgcolor;
+$public-title-hover-color:$title-hover-fgcolor;
+
+
+//购物车页面
+$shop-cart-main-bgcolor:$main-bgcolor;
+$shop-cart-main-color:$title-bgcolor;
+$shop-cart-main-goods-bgcolor:$title-hover-fgcolor;
+$shop-cart-main-select-icon-hover-color:#757676;
+$shop-cart-main-settlement-aside-bgcolor:#d7d7d7;
+$shop-cart-main-settlement-aside-color:#7f8181;
+
+//订单页
+$order-main-goods-bgcolor:$title-hover-fgcolor;
+$order-main-bgcolor:$main-bgcolor;
+$order-main-color:$title-bgcolor;
+//未发货
+$order-unshipped-color:rgb(165, 18, 18);
+//运货中
+$order-freighting-color:rgb(206, 103, 29);
+//已送达
+$order-arrived-color:rgb(17, 92, 17);
+//按钮
+$order-aside-button-bgcolor: #e4e4e4;
+$order-aside-button-hover-bgcolor: #a1a1a1;
+
+
+//商品详情页
+$goods-specifics-main-button-color:$title-hover-fgcolor;
+$goods-specifics-main-button-hover-bgcolor:rgb(213, 71, 24);
+$goods-specifics-main-goods-describe-color:$describe-color;
+$goods-specifics-main-goods-bgcolor:$title-hover-fgcolor;
+$goods-specifics-main-color:$title-bgcolor;
+$goods-specifics-main-bgcolor:$main-bgcolor;
+
+
+//聊天页
+$chat-boos-main-bgcolor:$main-bgcolor;
+$chat-boos-main-color:$title-bgcolor;
+$chat-boos-main-news-box-bgcolor:$title-hover-fgcolor;
+$chat-boos-main-box-bgcolor: #939393;
+$chat-boos-main-input-border-color: $border-color;
+$chat-boos-main-aside-hover-bgcolor: rgb(213, 71, 24);
+$chat-boos-main-aside-no-accept-color: #7f8181;
+$chat-boos-main-aside-no-accept-bgcolor: #d7d7d7;
+
+
+//搜索结果页
+$search-result-main-bgcolor:$main-bgcolor;
+$search-result-goods-main-bgcolor:rgb(217, 217, 217);
+$search-result-goods-main-img-bgcolor:$title-hover-fgcolor;
+
+
+//404页面
+$not-fund-main-color:$title-bgcolor;
+$not-fund-main-border-color:#7f8181;
+$not-fund-main-bgcolor:#dcdcdc;
+$not-fund-shadow-color: $login-shadow-color;
+$not-fund-cloud-bgcolor: #dcdcdc;
+$not-fund-dark-cloud-bgcolor: #383838;

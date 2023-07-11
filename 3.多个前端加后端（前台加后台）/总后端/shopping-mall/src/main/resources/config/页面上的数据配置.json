@@ -1,0 +1,102 @@
+{
+    "toggleViewData": [
+        {
+            "titleName": "不摇碧莲",
+            "goodsDatas": [
+                1,2,3,4,5,6
+            ]
+        },
+        {
+            "titleName": "机智一匹",
+            "goodsDatas": [
+                8,9,10,11,12,13
+            ]
+        },
+        {
+            "titleName": "不听八卦",
+            "goodsDatas": [
+                15,16,17,18,19,20
+            ]
+        },
+        {
+            "titleName": "一念之差",
+            "goodsDatas": [ 
+                22,23,24,25,26,27
+            ]
+        }
+    ],
+    "rotationChartData": {
+        "goodsDatas": [
+            65,66,67,68
+        ]
+    },
+    "goodsAdData": {
+        "goodsDatas": [
+            69,70
+        ]
+    },
+    "containerModuleData": [
+        {
+            "titleName": "亿贫如洗王道长",
+            "specialGoodsInfo": 29,
+            "topGoodsInfo": [
+                30,31,32,33
+            ],
+            "bottomGoodsInfo": [
+                34,35,36,37
+            ]
+        },
+        {
+            "titleName": "大慈大悲肖自在",
+            "specialGoodsInfo": 38,
+            "topGoodsInfo": [
+                39,40,41,42
+            ],
+            "bottomGoodsInfo": [
+                43,44,45,46
+            ]
+        },
+        {
+            "titleName": "一夜五百贾正亮",
+            "specialGoodsInfo": 47,
+            "topGoodsInfo": [
+                48,49,50,51
+            ],
+            "bottomGoodsInfo": [
+                52,53,54,55
+            ]
+        },
+        {
+            "titleName": "不做舔狗夏柳青",
+            "specialGoodsInfo": 56,
+            "topGoodsInfo": [
+                57,58,59,60
+            ],
+            "bottomGoodsInfo": [
+                61,62,63,64
+            ]
+        }
+    ],
+    "orderData": [
+        {
+            "goodsData": 8,
+            "goodsNum": 1,
+            "shipStatus": 1
+        },
+        {
+            "goodsData": 33,
+            "goodsNum": 3,
+            "shipStatus": 2
+        },
+        {
+            "goodsData": 28,
+            "goodsNum": 2,
+            "shipStatus": 3
+        },
+        {
+            "goodsData": 11,
+            "goodsNum": 10,
+            "shipStatus": 2
+        }
+    ]
+}

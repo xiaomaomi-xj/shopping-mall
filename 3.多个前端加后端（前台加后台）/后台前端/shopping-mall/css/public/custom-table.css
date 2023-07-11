@@ -1,0 +1,260 @@
+.custom-table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, .3);
+}
+
+.custom-table .custom-table-header-box {
+    width: 100%;
+    height: 5em;
+    display: flex;
+    background-color: #2a2a2a;
+    box-sizing: border-box;
+    font-weight: bolder;
+    color: rgb(227, 227, 227);
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-table .page-number-box {
+    height: 4.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-table .page-number-box .page-number {
+    width: 2em;
+    height: 2em;
+    margin: 1em 2em;
+    background-color: #2a2a2a;
+    color: rgb(227, 227, 227);
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.custom-table .page-number-box .check {
+    background-color: #268ff2;
+}
+
+.custom-table .page-number-box .page-number:hover {
+    color: white;
+    font-weight: bolder;
+}
+
+.custom-table .page-number-box .page-number-start {
+    padding: .5em .8em;
+    background-color: #2a2a2a;
+    color: rgb(227, 227, 227);
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.custom-table .page-number-box .page-number-start:hover {
+    color: white;
+    font-weight: bolder;
+}
+
+.custom-table .page-number-box .page-number-end {
+    padding: .5em .8em;
+    background-color: #2a2a2a;
+    color: rgb(227, 227, 227);
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.custom-table .page-number-box .page-number-end:hover {
+    color: white;
+    font-weight: bolder;
+}
+
+.custom-table .custom-table-header-box .custom-table-header-box-add-button {
+    padding: .2em .6em;
+    background-color: #268ff2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    border: 2px solid #268ff2;
+    transition: all .5s;
+}
+
+.custom-table .custom-table-header-box .custom-table-header-box-add-button:hover {
+    color: white;
+    background-color: #268ff278;
+}
+
+.custom-table .custom-table-header-box .custom-table-header-box-add-button .custom-table-header-box-add-button-span {
+    font-size: 1.1em;
+    font-weight: bolder;
+    margin-left: .2em;
+}
+
+.custom-table .custom-table-header-box .custom-table-header-box-query-box {
+    display: flex;
+    align-items: center;
+}
+
+.custom-table .custom-table-header-box .custom-table-header-box-query-box .custom-table-header-box-query-box-title {
+    margin-left: 3em;
+    margin-right: .5em;
+    font-size: 1.1em;
+}
+
+.custom-table .custom-table-header-box .custom-table-header-box-query-box .custom-table-header-box-query-box-query-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .3em .8em;
+    border-radius: 3px;
+    background-color: #7148e3;
+    border: 2px solid #7148e3;
+    font-size: 1.1em;
+    margin: 0 1em 0 1em;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.custom-table .custom-table-header-box .custom-table-header-box-query-box .custom-table-header-box-query-box-query-button:hover {
+    color: white;
+    background-color: #7148e378;
+}
+
+.custom-table .custom-table-header-box .custom-table-header-box-query-box .custom-table-header-box-query-box-reset-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .3em .8em;
+    border-radius: 3px;
+    background-color: #d648e3;
+    border: 2px solid #d648e3;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.custom-table .custom-table-header-box .custom-table-header-box-query-box .custom-table-header-box-query-box-reset-button:hover {
+    color: white;
+    background-color: #d648e378;
+}
+
+.custom-table .custom-table-header-box .custom-table-header-box-query-box .custom-table-header-box-query-box-input-box {
+    padding: .3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #e8e8e8;
+    border-radius: 5px;
+}
+
+.custom-table .custom-table-header-box .custom-table-header-box-query-box .custom-table-header-box-query-box-input-box>input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #e8e8e8;
+    font-size: 1.1em;
+}
+
+.custom-table .custom-table-title {
+    width: 100%;
+    height: 3.2em;
+    display: flex;
+    background-color: #2a2a2a;
+    padding: 5px;
+    box-sizing: border-box;
+    font-weight: bolder;
+    color: white;
+}
+
+.custom-table .custom-table-row {
+    width: 100%;
+    display: flex;
+    height: 3em;
+    background: #424242;
+    padding: 5px;
+    box-sizing: border-box;
+    color: #e8e8e8;
+}
+
+.custom-table .custom-table-row:nth-of-type(odd) {
+    background: #e8e8e8;
+    color: #343434;
+}
+
+.custom-table .item-num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+}
+
+.custom-table .item-column-box {
+    display: flex;
+    width: 90%;
+}
+
+.custom-table .item-column-box .item-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-table .item-column-box .item-column span {
+    width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.custom-table .item-column-box .item-column img {
+    width: 80%;
+    height: 2.5em;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.custom-table-update-button {
+    width: auto;
+    color: rgb(227, 227, 227) !important;
+    padding: .3em .5em;
+    max-width: 3.5em;
+    font-size: 1.1em !important;
+    background-color: #2663f2;
+    border-color: #2663f2 !important;
+}
+
+.custom-table-update-button:hover {
+    color: white !important;
+    border-color: #2663f2 !important;
+    background-color: #2663f278 !important;
+}
+
+.custom-table-delete-button {
+    width: auto;
+    color: rgb(227, 227, 227) !important;
+    padding: .3em .5em;
+    font-size: 1.1em !important;
+    background-color: #f2264b;
+    border-color: #f2264b !important;
+}
+
+.custom-table-delete-button:hover {
+    color: white !important;
+    border-color: #f2264b !important;
+    background-color: rgba(221, 38, 81, 0.5) !important;
+}

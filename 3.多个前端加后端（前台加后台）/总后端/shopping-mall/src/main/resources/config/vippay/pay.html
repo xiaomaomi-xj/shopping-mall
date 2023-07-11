@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vip-支付界面</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-color: #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main {
+            width: 70%;
+            height: 80%;
+            background-color: #fff;
+            box-shadow: 2px 2px 10px 10px rgba(0, 0, 0, .3);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+        }
+
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 1.5em;
+            flex-direction: column;
+            background-color: rgb(247, 82, 27);
+            box-sizing: border-box;
+            border-radius: 10px 10px 0 0;
+            color: white;
+        }
+
+        .goods-name {
+            font-size: 1.2em;
+        }
+
+        .goods-price {
+            font-size: 2em;
+            font-weight: bolder;
+        }
+
+        .yuan {
+            font-size: .7em;
+            font-weight: 100;
+        }
+
+        .header-bottom {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        article {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 1em 0em;
+        }
+
+        .title {
+            font-size: 2em;
+            font-weight: bolder;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: rgb(247, 82, 27);
+            box-sizing: border-box;
+        }
+
+        .title .en {
+            font-size: .6em;
+        }
+
+        footer {
+            width: 100%;
+            padding: 1.2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(247, 82, 27);
+            box-sizing: border-box;
+            border-radius: 0 0 10px 10px;
+            box-sizing: border-box;
+        }
+
+        footer span {
+            font-size: 1.2em;
+            font-weight: bolder;
+            color: #fff;
+        }
+
+        .footer-tips {
+            font-size: .8em;
+            color: rgb(230, 230, 230);
+            text-decoration: none;
+        }
+
+        .main {
+            width: 100%;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            box-sizing: border-box;
+        }
+
+        .main .button-box {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1em;
+            margin: 1em 0em;
+            box-sizing: border-box;
+        }
+
+        .button-box aside {
+            margin: 0em 6em;
+            border: 2px solid rgb(247, 82, 27);
+            color: rgb(247, 82, 27);
+            border-radius: 8px;
+            padding: .5em 1em;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: .5s;
+            font-weight: bolder;
+            box-sizing: border-box;
+        }
+
+        .button-box aside:hover {
+            background-color: rgb(247, 82, 27);
+            color: #fff;
+        }
+
+        .main-header {
+            padding: 1em;
+            width: 50%;
+        }
+
+        .main-tips {
+            font-size: 1.2em;
+            font-weight: bolder;
+            margin-left: .2em;
+            margin-bottom: 1em;
+        }
+
+        .input-box {
+            border: 2px solid #797979;
+            border-radius: 10px;
+            padding: .5em;
+            margin-top: .5em;
+            transition: .3s;
+        }
+
+        input {
+            outline: none;
+            border: none;
+            font-size: 1.3em;
+            width: 100%;
+            font-weight: bolder;
+            color: #797979;
+            text-align: center;
+        }
+
+        .header-top {
+            font-size: 1em;
+            margin-bottom: 1em;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .number {
+            font-weight: bolder;
+        }
+
+        .error {
+            color: red;
+            font-weight: bolder;
+            margin-left: .5em;
+            transition: .3s;
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+<main>
+    <header>
+        <div class="header-top">
+            <span class="tips">正在使用购物卡进行支付</span>
+            <span>过期时间：<span class="expire">30:00</span></span>
+            <span>订单号：<span class="number">#{orderId}</span></span>
+        </div>
+        <div class="header-bottom">
+            <span class="goods-name">商品名字：<span style="font-weight: bolder;">#{goodsName}</span></span>
+            <span class="goods-price">#{amount}<span class="yuan">元</span></span>
+        </div>
+    </header>
+    <article>
+        <div class="title">
+            <span class="ch">VIP支付</span>
+            <span class="en">VIP_PAY</span>
+        </div>
+    </article>
+    <div class="main">
+        <div class="main-header">
+            <form action="#{callbackUrl}" method="post">
+                <input type="hidden" name="orderId" value="#{orderId}">
+                <input type="hidden" name="token" value="#{token}">
+                <span class="main-tips">请输入你的卡号：</span>
+                <div class="input-box">
+                    <input type="text" name="cardNumber" placeholder="" maxlength="29">
+                </div>
+                <div class="error">
+                    <span>账号不得为空且必须是29位！</span>
+                </div>
+                <br>
+                <span class="main-tips">请输入你的卡号密码：</span>
+                <div class="input-box">
+                    <input type="password" name="cardPassword" placeholder="">
+                </div>
+                <div class="error">
+                    <span>密码不得为空！</span>
+                </div>
+            </form>
+        </div>
+        <div class="button-box">
+            <aside class="return-button">返回主页</aside>
+            <aside class="pay-button">确认支付</aside>
+        </div>
+    </div>
+    <footer>
+        <span>欢迎使用购物卡支付<a href="#{requestFromUrl}" class="footer-tips">（还没有？快去找客服办一张吧，过年过节送人必备！）</a></span>
+    </footer>
+</main>
+
+<script>
+    const cardNumber = document.querySelector('input[type="text"]');
+    const cardPassword = document.querySelector('input[type="password"]');
+    const cardNumberBox = cardNumber.parentElement;
+    const cardPasswordBox = cardPassword.parentElement;
+    const cardNumberError = cardNumberBox.nextElementSibling;
+    const cardPasswordError = cardPasswordBox.nextElementSibling;
+    let cardNumberAccept = false;
+    let cardPasswordAccept = false;
+    const expire = document.querySelector('.expire');
+    const returnButton = document.querySelector('.return-button');
+    const payButton = document.querySelector('.pay-button');
+    const form = document.forms[0];
+    let timeNumber=#{expire};
+    const date = new Date(timeNumber * 1000);
+    expire.innerText = date.getMinutes().toString().padStart(2, '0') + ":" + date.getSeconds().toString().padStart(2, '0');
+    const expireId = setInterval(() => {
+        if (timeNumber <= 0) {
+            clearInterval(expireId);
+            window.location.href = "";
+        }
+        timeNumber -= 1;
+        const date = new Date(timeNumber * 1000);
+        expire.innerText = date.getMinutes().toString().padStart(2, '0') + ":" + date.getSeconds().toString().padStart(2, '0');
+    }, 1000);
+    function checkCardCode() {
+        if (cardNumber.value.trim().length !== 29) {
+            cardNumberAccept = false;
+        } else {
+            cardNumberAccept = true;
+        }
+        if (cardPassword.value.trim().length === 0) {
+            cardPasswordAccept = false;
+        } else {
+            cardPasswordAccept = true;
+        }
+    }
+    cardNumber.addEventListener('focus', () => {
+        cardNumberBox.style.borderColor = 'rgb(247, 82, 27)';
+        cardNumber.style.color = 'rgb(247, 82, 27)';
+    });
+    cardNumber.addEventListener('blur', () => {
+        cardNumberBox.style.borderColor = '#797979';
+        cardNumber.style.color = '#797979';
+        checkCardCode();
+        if (!cardNumberAccept) {
+            cardNumberError.style.opacity = "1";
+        }
+    });
+    cardNumber.addEventListener('input', () => {
+        checkCardCode();
+        if (!cardNumberAccept) {
+            cardNumberError.style.opacity = "1";
+        } else {
+            cardNumberError.style.opacity = "0";
+        }
+    });
+    cardPassword.addEventListener('focus', () => {
+        cardPasswordBox.style.borderColor = 'rgb(247, 82, 27)';
+        cardPassword.style.color = 'rgb(247, 82, 27)';
+    });
+    cardPassword.addEventListener('blur', () => {
+        cardPasswordBox.style.borderColor = '#797979';
+        cardPassword.style.color = '#797979';
+        checkCardCode();
+        if (!cardPasswordAccept) {
+            cardPasswordError.style.opacity = "1";
+        }
+    });
+    cardPassword.addEventListener('input', () => {
+        checkCardCode();
+        if (!cardPasswordAccept) {
+            cardPasswordError.style.opacity = "1";
+        } else {
+            cardPasswordError.style.opacity = "0";
+        }
+    });
+    returnButton.addEventListener('click', () => {
+        window.location.href = '#{requestFromUrl}';
+    });
+    payButton.addEventListener('click', () => {
+        checkCardCode();
+        if (!cardNumberAccept) {
+            cardNumberError.style.opacity = "1";
+        } else {
+            cardNumberError.style.opacity = "0";
+        }
+        if (!cardPasswordAccept) {
+            cardPasswordError.style.opacity = "1";
+        } else {
+            cardPasswordError.style.opacity = "0";
+        }
+        if (cardNumberAccept && cardPasswordAccept) {
+            form.submit();
+        }
+    });
+
+</script>
+</body>
+
+</html>

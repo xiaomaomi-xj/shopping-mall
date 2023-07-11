@@ -1,0 +1,105 @@
+/* 对上传按钮的优化 */
+.file-update-box {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+}
+.file-update-box .file-update-box-file{
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.file-update-box .file-update-box-img{
+    width: 100%;
+    height: 100%;
+}
+
+.file-update-box .file-update-box-extend {
+    position: absolute;
+    color: rgba(255, 255, 255, .5);
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 100%;
+    z-index: 2;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.file-update-box .file-update-box-extend:hover{
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.file-update-box .file-update-box-extend:hover .file-update-box-extend-left {
+    border-color: rgba(255, 255, 255, .8);
+}
+
+.file-update-box .file-update-box-extend:hover .file-update-box-extend-right{
+    border-color: rgba(255, 255, 255, .8);
+}
+
+.file-update-box .file-update-box-extend .file-update-box-extend-left {
+    position: absolute;
+    left: 45%;
+    top: 55%;
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    width: 8px;
+    height: 8px;
+    border: 2px solid rgba(255, 255, 255, .5);
+    margin-bottom: .2em;
+    border-width: 0px 0 2px 2px;
+}
+
+.file-update-box .file-update-box-extend .file-update-box-extend-right{
+    position: absolute;
+    left: 55%;
+    top: 45%;
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    width: 8px;
+    height: 8px;
+    border: 2px solid rgba(255, 255, 255, .5);
+    margin-bottom: .2em;
+    border-width: 2px 2px 0px 0px;
+}
+
+.file-update-box .file-update-box-select{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.file-update-box .file-update-box-select .file-update-box-select-left{
+    position: absolute;
+    width: 40px;
+    height: 6px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+}
+
+.file-update-box .file-update-box-select .file-update-box-select-right{
+    width: 6px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+}

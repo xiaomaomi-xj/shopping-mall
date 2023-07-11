@@ -1,0 +1,72 @@
+main {
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+/*因为这个是要放到组件里面的，不再main下面，所以前面不要写main*/
+.order-modify-ship-status-box .order-modify-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.order-modify-ship-status-box .order-modify-box .order-modify-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bolder;
+    margin: .1em;
+}
+
+.order-modify-ship-status-box .order-modify-box .order-id-box,
+.order-ship-status-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3em;
+    font-size: 1.1em;
+}
+
+.order-modify-ship-status-box .order-modify-box .order-id-box .order-id-title {
+    margin-right: 1em;
+}
+
+.order-modify-ship-status-box .order-modify-box .order-id-box .order-id-value {
+    font-weight: bolder;
+    width: 15em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-modify-ship-status-box .order-modify-box .order-ship-status-box .order-ship-status-title{
+    margin-right: 1em;
+}
+
+.order-modify-ship-status-box .order-modify-box .order-ship-status-box .order-ship-status-value-box{
+    width: 15em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-modify-ship-status-box .order-ship-status-button-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+}
+
+.order-modify-ship-status-box .order-ship-status-button-box .order-modify-status-button {
+    font-size: 1.2em !important;
+}
+
+/*修改表格样式*/
+.custom-table .custom-table-title {
+    height: 4.2em;
+}
+
+.custom-table .custom-table-row {
+    height: 3.8em;
+}

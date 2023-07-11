@@ -1,0 +1,9 @@
+{
+    "storeNameHaveSpecial":true,
+    "specialText": "异",
+    "storeName": "^人之下",
+    "loginBgImgUrl": "bg.jpg",
+    "registerBgImgUrl": "bg.jpg",
+    "passwordTemplateText": "💎",
+    "belowPageText": "天之道，利而不害，祝各位财运兴隆！"
+}

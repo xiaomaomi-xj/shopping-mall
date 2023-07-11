@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+/*各个浮层的大小*/
+.message {
+    z-index: 1003;
+}
+
+.message-box {
+    z-index: 1002;
+}
+
+.loading {
+    z-index: 1001;
+}
+
+.del-tips-box {
+    z-index: 1000;
+}
+
+.img-component-box{
+    z-index: 999;
+}
+
+.custom-component-box {
+    z-index: 998;
+}
+
+/*主页最小高度为80vh*/
+main {
+    min-height: 80vh;
+    width: 100%;
+    color: rgba(0, 0, 0, .8);
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}

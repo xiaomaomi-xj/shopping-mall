@@ -1,0 +1,112 @@
+{
+  "properties": [
+    {
+      "sourceType": "com.shoppingMall.properties.SelfConfigPropertiesBean",
+      "name": "self.config",
+      "type": "com.shoppingMall.entity.po.self.SelfConfig",
+      "description": "自己的配置."
+    },
+    {
+      "sourceType": "com.shoppingMall.properties.SelfConfigPropertiesBean",
+      "name": "self.config.store-name",
+      "type": "java.lang.String",
+      "description": "商店的名称."
+    },
+    {
+      "sourceType": "com.shoppingMall.properties.SelfConfigPropertiesBean",
+      "name": "self.config.file-max-size",
+      "type": "java.lang.Long",
+      "description": "最大允许的文件上传大小."
+    },
+    {
+      "sourceType": "com.shoppingMall.properties.SelfConfigPropertiesBean",
+      "name": "self.config.email",
+      "type": "com.shoppingMall.entity.po.self.Email",
+      "description": "邮箱配置."
+    },
+    {
+      "sourceType": "com.shoppingMall.properties.SelfConfigPropertiesBean",
+      "name": "self.config.email.from-email",
+      "type": "java.lang.String",
+      "description": "邮箱账号."
+    },
+    {
+      "sourceType": "com.shoppingMall.properties.SelfConfigPropertiesBean",
+      "name": "self.config.email.email-password",
+      "type": "java.lang.String",
+      "description": "邮箱密码."
+    },
+    {
+      "sourceType": "com.shoppingMall.properties.SelfConfigPropertiesBean",
+      "name": "self.config.email.host",
+      "type": "java.lang.String",
+      "description": "邮箱主机."
+    },
+    {
+      "sourceType": "com.shoppingMall.properties.SelfConfigPropertiesBean",
+      "name": "self.config.email.port",
+      "type": "java.lang.String",
+      "description": "邮箱端口."
+    },
+    {
+      "sourceType": "com.shoppingMall.properties.SelfConfigPropertiesBean",
+      "name": "self.config.password",
+      "type": "com.shoppingMall.entity.po.self.Password",
+      "description": "加密配置."
+    },
+    {
+      "sourceType": "com.shoppingMall.properties.SelfConfigPropertiesBean",
+      "name": "self.config.password.salt",
+      "type": "java.lang.String",
+      "description": "加密用到的盐."
+    },
+    {
+      "sourceType": "com.shoppingMall.properties.SelfConfigPropertiesBean",
+      "name": "self.config.wechat",
+      "type": "com.shoppingMall.entity.po.self.Wechat",
+      "description": "微信配置."
+    },
+    {
+      "sourceType": "com.shoppingMall.properties.SelfConfigPropertiesBean",
+      "name": "self.config.wechat.app-id",
+      "type": "java.lang.String",
+      "description": "微信账号id."
+    },
+    {
+      "sourceType": "com.shoppingMall.properties.SelfConfigPropertiesBean",
+      "name": "self.config.wechat.app-secret",
+      "type": "java.lang.String",
+      "description": "微信账号密匙."
+    },
+    {
+      "sourceType": "com.shoppingMall.properties.SelfConfigPropertiesBean",
+      "name": "self.config.wechat.redirect_url",
+      "type": "java.lang.String",
+      "description": "回调地址."
+    },
+    {
+      "sourceType": "com.shoppingMall.properties.SelfConfigPropertiesBean",
+      "name": "self.config.head-img-file",
+      "type": "com.shoppingMall.entity.po.self.HeadImgFile",
+      "description": "头像文件配置."
+    },
+    {
+      "sourceType": "com.shoppingMall.properties.SelfConfigPropertiesBean",
+      "name": "self.config.head-img-file.imgSize",
+      "type": "java.lang.Long",
+      "description": "头像文件允许的大小."
+    },
+    {
+      "sourceType": "com.shoppingMall.properties.SelfConfigPropertiesBean",
+      "name": "self.config.pay",
+      "type": "com.shoppingMall.entity.po.self.Pay",
+      "description": "支付配置."
+    },
+    {
+      "sourceType": "com.shoppingMall.properties.SelfConfigPropertiesBean",
+      "name": "self.config.pay.request-from-url",
+      "type": "java.lang.String",
+      "description": "取消支付返回的地址."
+    }
+  ]
+}

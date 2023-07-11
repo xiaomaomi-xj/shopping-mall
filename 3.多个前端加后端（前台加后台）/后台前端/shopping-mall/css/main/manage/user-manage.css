@@ -1,0 +1,19 @@
+
+/*修改表格样式*/
+.custom-table .custom-table-title {
+    height: 4.2em;
+}
+
+.custom-table .custom-table-row {
+    height: 3.8em;
+}
+
+.custom-table-update-button {
+    padding: .2em .5em !important;
+    font-size: 1.1em !important;
+}
+
+.custom-table-delete-button {
+    padding: .2em .5em !important;
+    font-size: 1.1em !important;
+}

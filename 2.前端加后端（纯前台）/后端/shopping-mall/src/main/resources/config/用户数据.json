@@ -1,0 +1,16 @@
+[
+    {
+        "userName": "张之维",
+        "userEmail":"zhangzhiwei@tianshi.com",
+        "userEmailCode":"1234",
+        "userSex":"1",
+        "password":"Aa111111"
+    },
+    {
+        "userName": "冯宝宝",
+        "userEmail":"fengbaobao@yuangong.com",
+        "userEmailCode":"5678",
+        "userSex":"0",
+        "password":"Aa111111"
+    }
+]

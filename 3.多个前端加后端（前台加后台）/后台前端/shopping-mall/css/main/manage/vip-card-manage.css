@@ -1,0 +1,89 @@
+main {
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+.vip-card-modify-box,
+.vip-card-add-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vip-card-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bolder;
+    margin-bottom: 1.5em;
+}
+
+.vip-card-text-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 35em;
+    height: 2em;
+}
+
+.vip-card-text-box .vip-card-text-value {
+    font-size: 1.1em;
+    font-weight: bolder;
+    width: 22.3em;
+}
+
+.vip-card-input-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5.5em;
+    width: 35em;
+}
+
+.vip-card-input-box .vip-card-input {
+    border: 2px solid #a8a8a8;
+    box-sizing: border-box;
+    padding: .3em;
+    border-radius: 3px;
+    width: 25em;
+}
+
+.vip-card-input-box .vip-card-input input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.1em;
+    font-weight: bolder;
+    color: rgb(220, 220, 220);
+    background-color: transparent;
+}
+
+.vip-card-modify-password-button,
+.vip-card-modify-balance-button,
+.vip-card-add-button {
+    font-size: 1.2em !important;
+}
+
+.vip-card-modify-balance-button{
+    margin-left: 3em !important;
+}
+
+/*修改表格样式*/
+.custom-table .custom-table-title {
+    height: 4.2em;
+}
+
+.custom-table .custom-table-row {
+    height: 3.8em;
+}
+
+.custom-table-update-button {
+    padding: .2em .5em !important;
+    font-size: 1.1em !important;
+}
+
+.custom-table-delete-button {
+    padding: .2em .5em !important;
+    font-size: 1.1em !important;
+}
