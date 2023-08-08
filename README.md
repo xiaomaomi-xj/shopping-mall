@@ -15,7 +15,7 @@
 
 #### 帮助文档
 - 从项目启动所需要的软件安装过程到最后项目如何运行，如何修改，事无巨细，都进行了详细的讲解。
-- 帮助文档地址：[https://xiaomaomi-xj.github.io/shopping-mall-help](https://xiaomaomi-xj.gitee.io/shopping-mall-help/#/)
+- 帮助文档地址：[https://xiaomaomi-xj.github.io/shopping-mall-help](https://xiaomaomi-xj.github.io/shopping-mall-help/#/)
 - 项目地址（gitee）：[https://gitee.com/xiaomaomi-xj/shopping-mall](https://gitee.com/xiaomaomi-xj/shopping-mall)
 - 项目地址（github）:[https://github.com/xiaomaomi-xj/shopping-mall](https://github.com/xiaomaomi-xj/shopping-mall)
 
