@@ -1,11 +1,11 @@
 <h1 style="text-align: center">shopping-mall（商城万能模板）</h1>
 <div style="text-align: center">
 
-<img src="https://xiaomaomi-xj.gitee.io/shopping-mall-help/source/cover/bg.png" style="width:20%"></img>
+<img src="https://xiaomaomi-xj.github.io/shopping-mall-help/source/cover/bg.png" style="width:20%"></img>
 
-![](https://xiaomaomi-xj.gitee.io/shopping-mall-help/source/shields/2.svg)
-![](https://xiaomaomi-xj.gitee.io/shopping-mall-help/source/shields/1.svg)
-![](https://xiaomaomi-xj.gitee.io/shopping-mall-help/source/shields/4.svg)
+![](https://xiaomaomi-xj.github.io/shopping-mall-help/source/shields/2.svg)
+![](https://xiaomaomi-xj.github.io/shopping-mall-help/source/shields/1.svg)
+![](https://xiaomaomi-xj.github.io/shopping-mall-help/source/shields/4.svg)
 
 </div>
 
@@ -15,7 +15,7 @@
 
 #### 帮助文档
 - 从项目启动所需要的软件安装过程到最后项目如何运行，如何修改，事无巨细，都进行了详细的讲解。
-- 帮助文档地址：[https://xiaomaomi-xj.gitee.io/shopping-mall-help](https://xiaomaomi-xj.gitee.io/shopping-mall-help/#/)
+- 帮助文档地址：[https://xiaomaomi-xj.github.io/shopping-mall-help](https://xiaomaomi-xj.gitee.io/shopping-mall-help/#/)
 - 项目地址（gitee）：[https://gitee.com/xiaomaomi-xj/shopping-mall](https://gitee.com/xiaomaomi-xj/shopping-mall)
 - 项目地址（github）:[https://github.com/xiaomaomi-xj/shopping-mall](https://github.com/xiaomaomi-xj/shopping-mall)
 
